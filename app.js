@@ -75,16 +75,9 @@ document.querySelector('.nav-icon').addEventListener('click', toggleHeaderNav);
 // Add click event to close button
 document.querySelector('#nav-content .close-btn').addEventListener('click', toggleHeaderNavC);
 
+
+
 // floating action-button
-document.addEventListener('DOMContentLoaded', function () {
-  const fabButton = document.querySelector('.fab');
-
-  fabButton.addEventListener('click', function () {
-      // Add your desired action here
-      alert('FAB Clicked!');
-  });
-});
-
 document.addEventListener('DOMContentLoaded', function () {
   const button = document.getElementById('animateMe');
 
