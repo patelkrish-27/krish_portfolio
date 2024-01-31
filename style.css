@@ -384,6 +384,8 @@ p {
 		position: fixed;
 	}
 
+
+
 }
 
 /* Hero section Styles */
@@ -1123,22 +1125,22 @@ p {
 /* Floating Action Button  */
 
 .fab-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 	z-index: 500;
 	text-align: center;
 }
 
 .fab {
-    width: 100px;
-    height: auto;
-    background-color: var(--primary-color);
-    color: var(--body-bg);
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+	width: 100px;
+	height: auto;
+	background-color: var(--primary-color);
+	color: var(--body-bg);
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
 	letter-spacing: 2px;
 	line-height: 60px;
 	display: inline-block;
@@ -1147,15 +1149,46 @@ p {
 
 /* Animation Keyframes */
 @keyframes textAnimation {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 90%;
+	}
 }
 
+.fab-containerM {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 500;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	width: 60px;
+	height: 60px;
+	background-color: var(--body-bg);
+	border-radius: 50%;
+}
+
+.fabM{
+	height: 50px;
+	width: 50px;
+	margin: 5px;
+}
 .animate {
-    animation: textAnimation 1s ease-out;
-    animation-fill-mode: forwards;
+	animation: textAnimation 1s ease-out;
+	animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 768px) {
+	.fab-container {
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+.fab-containerM{
+	display: none;
+}
 }
