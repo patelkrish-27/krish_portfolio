@@ -1168,7 +1168,7 @@ p {
 	justify-items: center;
 	width: 60px;
 	height: 60px;
-	background-color: var(--body-bg);
+	background-color: #6dc5eb;
 	border-radius: 50%;
 }
 
