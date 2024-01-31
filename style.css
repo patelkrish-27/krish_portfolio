@@ -1119,3 +1119,37 @@ p {
 .social-info li i:hover {
 	color: #0468D7;
 }
+
+.fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fab {
+    width: 100px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--body-bg);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+	letter-spacing: 2px;
+}
+
+/* Animation Keyframes */
+@keyframes textAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.animate {
+    animation: textAnimation 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
