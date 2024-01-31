@@ -1120,16 +1120,19 @@ p {
 	color: #0468D7;
 }
 
+/* Floating Action Button  */
+
 .fab-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 500;
+	z-index: 500;
+	text-align: center;
 }
 
 .fab {
     width: 100px;
-    height: 60px;
+    height: auto;
     background-color: var(--primary-color);
     color: var(--body-bg);
     font-size: 20px;
@@ -1137,6 +1140,9 @@ p {
     border-radius: 10px;
     cursor: pointer;
 	letter-spacing: 2px;
+	line-height: 60px;
+	display: inline-block;
+	padding: 4px;
 }
 
 /* Animation Keyframes */
@@ -1153,4 +1159,3 @@ p {
     animation: textAnimation 1s ease-out;
     animation-fill-mode: forwards;
 }
-
